@@ -5,7 +5,12 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: ['eslint:recommended', 'eslint-config-prettier'],
+  extends: [
+    'eslint:recommended',
+    'eslint-config-prettier',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
