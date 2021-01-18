@@ -7,4 +7,6 @@ app.get('/', (req, res) => {
   res.send('Welcome to Express starter app');
 });
 
-app.listen(port, () => console.log(`App listening on port ${port}! => http://localhost:${port}/`));
+app.listen(port, () =>
+  console.log(`App listening on port ${port}! => http://localhost:${port}/`)
+);
